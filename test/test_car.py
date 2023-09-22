@@ -106,7 +106,7 @@ class TestPalindrome(unittest.TestCase):
 
     def test_battery_should_not_be_serviced(self):
         today = datetime.today().date()
-        last_service_date = today.replace(year=today.year - 3)
+        last_service_date = today.replace(year=today.year - 1)
         warning_light_is_on = False
         engine = SternmanEngine(last_service_date, warning_light_is_on)
         battery = Spindler(2, last_service_date)
